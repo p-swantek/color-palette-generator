@@ -1,0 +1,14 @@
+
+<div class="container">
+  <div class="row" style="min-height: 500px;">
+    <div class="col" *ngFor="let hex of (colorHexes | async)" >
+      <app-color-palette-item [colorHex]="hex"></app-color-palette-item>
+    </div>
+  </div>
+
+</div>
+
+
+<button mat-raised-button color="primary" (click)="generateRandomColorPalette()">
+  Generate Palette
+</button>

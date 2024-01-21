@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { ColorPaletteGeneratorComponent } from './color-palette-generator/color-palette-generator/color-palette-generator.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, ColorPaletteGeneratorComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
